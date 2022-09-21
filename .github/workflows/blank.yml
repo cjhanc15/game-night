@@ -60,7 +60,7 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.12.12
         with: 
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "game-night"
+          heroku_app_name: "the-game-nights"
           heroku_email: "cybyl.hancock@gmail.com"
           appdir: "ui/"
           usedocker: true
@@ -79,7 +79,7 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.12.12
         with: 
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "game-night"
+          heroku_app_name: "game-nights-api"
           heroku_email: "cybyl.hancock@gmail.com"
           appdir: "api/"
           usedocker: true
