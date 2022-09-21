@@ -28,6 +28,8 @@ module.exports = {
     }
   },
 
+  //possible fix
+
   test: {
     client: 'postgresql',
     connection: {
