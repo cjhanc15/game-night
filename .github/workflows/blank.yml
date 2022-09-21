@@ -101,11 +101,6 @@ jobs:
       # Executes the linter on the API code base.
       - name: Run Linter
         run: npm --prefix ./api run lint
-
-  # This workflow kicks off the sonarqube for your API.  
-  run-api-sonarqube:
-      - name: Official SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@v1.1.0
   
   # This workflow kicks off the linter for API.  
   run-ui-linter:
@@ -123,9 +118,5 @@ jobs:
       - name: Run Linter
         run: npm --prefix ./ui run lint
               # Runs Sonarqube
-      - name: Official SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@v1.1.0
-  # This workflow kicks off the sonarqube for your UI.  
-  run-ui-sonarqube:
       - name: Official SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v1.1.0
