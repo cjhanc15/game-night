@@ -117,6 +117,3 @@ jobs:
       # Executes the linter on the UI code base.
       - name: Run Linter
         run: npm --prefix ./ui run lint
-              # Runs Sonarqube
-      - name: Official SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@v1.1.0
